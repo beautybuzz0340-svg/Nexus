@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from 'react';
 import { Video, VideoOff, Mic, MicOff, Monitor, Phone, PhoneOff, Video as CamIcon } from 'lucide-react';
 import {  Users } from 'lucide-react';
 import { Wallet, ArrowUpRight, ArrowDownLeft, RefreshCw} from 'lucide-react';
@@ -148,7 +147,6 @@ export const EntrepreneurDashboard: React.FC = () => {
               <h2 className="text-lg font-medium text-gray-900">Collaboration Requests</h2>
               <Badge variant="primary">{pendingRequests.length} pending</Badge>
             </CardHeader>
-            
             <CardBody>
               {collaborationRequests.length > 0 ? (
                 <div className="space-y-4">
